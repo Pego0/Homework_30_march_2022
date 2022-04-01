@@ -73,5 +73,6 @@ public class Main {
                 System.out.println("Takogo mesyaza net");
         }
 
+
     }
 }
