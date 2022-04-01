@@ -24,11 +24,11 @@ public class Main {
             System.out.println("Download simplified program on Android by link:...");
         }
         System.out.println("Task 3:");
-        int year = 2022;
-        if (year % 4 != 0 || year % 100 == 0) {
-            System.out.println("This year is not leap");
+        int year = 100;
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println("This year is leap");
         } else {
-            System.out.println("This is a leap year");
+            System.out.println("This is not leap year");
         }
         System.out.println("Task 4:");
         int deliveryDistance = 70;
@@ -44,6 +44,34 @@ public class Main {
             System.out.println("Days of delivery: " + daysOfDelivery3);
         }
         System.out.println("Task 5:");
+        byte monthNumber = 9;
+
+        switch (monthNumber) {
+            case 1:
+            case 2:
+                System.out.println("Zima");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Vesna");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Leto");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Osen");
+                break;
+            case 12:
+                System.out.println("Zima");
+                break;
+            default:
+                System.out.println("Takogo mesyaza net");
+        }
 
     }
 }
